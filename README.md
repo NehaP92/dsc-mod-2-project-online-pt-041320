@@ -1,167 +1,335 @@
+# Mod 2 Final Project: King County Data Analysis
 
-# Study Group Recordings Playlist
--  Project Specific:
-    - [Intro to Mod Project from 100719PT Cohort]( https://youtu.be/Uy9O1NcjZ68?t=2274)
-
-- 4-Part Lessons for Regression (100719PT cohort)
-    - https://www.youtube.com/playlist?list=PLFknVelSJiSzPeEKXfAFYjzzzvK8zr_qA
-___
-# Module 2 Final Project
 
 
 ## Introduction
 
-In this lesson, we'll review all of the guidelines and specifications for the final project for Module 2.
-
-## Objectives
-You will be able to:
-* Describe all required aspects of the final project for Module 2
-* Describe all required deliverables
-* Describe what constitutes a successful project
-
-## Final Project Summary
-
-Another module down--you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-2-project-v2-1/master/halfway-there.gif)
-
-All that remains in Module 2 is to put our newfound data science skills to use with a final project! You should expect this project to take between 20 and 25 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "level up" suggestions. If you're worried that you're going to get to 30 hrs and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
-
-## The Dataset
-
-For this project, you'll be working with the King County House Sales dataset. We've modified the dataset to make it a bit more fun and challenging.  The dataset can be found in the file `"kc_house_data.csv"`, in this repo.
-
-The description of the column names can be found in the column_names.md file in this repository. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
-
-You'll clean, explore, and model this dataset with a multivariate linear regression to predict the sale price of houses as accurately as possible.
-
-## The Deliverables
-
-For online students, there will be five deliverables for this project (Note: On-campus students may have different requirements, please speak with your instructor):
-
-1. A well documented **Jupyter Notebook** containing any code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project.  
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders. Make sure to also add and commit this pdf of your non-technical presentation to your repository with a file name of presentation.pdf.
-4. **[A Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1)**	
-5. A **Video Walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
-
-Note: On-campus students may have different requirements, please speak with your instructor.
-
-### Jupyter Notebook Must-Haves
-
-For this project, your Jupyter Notebook should meet the following specifications:
-
-#### Organization/Code Cleanliness
-
-* The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-
-#### Visualizations & EDA
-
-* Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
-    * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
-* Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-
-#### Model Quality/Approach
-
-* Your model should not include any predictors with p-values greater than .05.  
-* Your notebook shows an iterative approach to modeling, and details the parameters and results of the model at each iteration.  
-    * **Level Up**: Whenever necessary, you briefly explain the changes made from one iteration to the next, and why you made these choices.  
-* You provide at least 1 paragraph explaining your final model.   
-* You pick at least 3 coefficients from your final model and explain their impact on the price of a house in this dataset.   
+A lot of us today wanting to sell our homes invest loads of time researching the market and the trends before setting a price for their homes, but at times, end up selling at a price below expectation. It becomes stressfull at times, because real estate, is a big investment one expects a desent return from. However, just knowing the market is not enough. Certain features of a house play significant role in increasing the cost of your house to just the bar you need. Some of these features do not require particular upfron investment either. The findings of this project would help to identify some of the features worth considering to set and expect a price for your house.
 
 
-### Non-Technical Presentation Must-Haves
+## Dataset
 
-Another deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home.
-
-Your presentation should:
-
-* Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
-* Take no more than 5 minutes to present.   
-* Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.   
-
-**_Based on the results of your models, your presentation should discuss at least two concrete features that highly influence housing prices._**
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1) for the technical requirements and blog ideas.
-
-
-## The Process 
-The process for this project is identical to the process you followed for your module 1 project. We specified it again below as a refresher.
-(Note: On-campus students may have different processes, please speak with your instructor)
-
-### 1. Getting Started
-
-Please start by reviewing this document. If you have any questions, please ask them in Slack ASAP so (a) we can answer the questions and (b) so we can update this repository to make it clearer.
-
-Be sure to let the instructor team know when you’ve started working on a project, either by reaching out over Slack or, if you are in a full-time or part-time cohort, by connecting with your Cohort Lead in your weekly 1:1. If you’re not sure who to reach out to, post in the #online-ds-sp-000 channel in Slack.
-
-Once you're done with this module, please start on the project. Do that by forking this repository, cloning it locally, and working in the student.ipynb file. Make sure to also add and commit a pdf of your presentation to the repository with a file name of `presentation.pdf`.
-
-### 2. The Project Review
-
-_Note: On-campus students may have different review processes, please speak with your instructor._
-
-> **When you start on the project, please also reach out to an instructor immediately to schedule your project review** (if you're not sure who to schedule with, please ask in Slack!)
-
-#### What to expect from the Project Review
-
-Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation *(sometimes technical interviews will feel arbitrary or unfair - if you want to get the job, commenting on that is seldom a good choice)*.
-
-The project review is comprised of a 45 minute 1:1 session with one of the instructors. During your project review, be prepared to:
-
-#### 1. Deliver your PDF presentation to a non-technical stakeholder.
-In this phase of the review (~10 mins) your instructor will play the part of a non-technical stakeholder that you are presenting your findings to. The presentation  should not exceed 5 minutes, giving the "stakeholder" 5 minutes to ask questions.
-
-In the first half of the presentation (2-3 mins), you should summarize your methodology in a way that will be comprehensible to someone with no background in data science and that will increase their confidence in you and your findings. In the second half (the remaining 2-3 mins) you should summarize your findings and be ready to answer a couple of non-technical questions from the audience. The questions might relate to technical topics (sampling bias, confidence, etc) but will be asked in a non-technical way and need to be answered in a way that does not assume a background in statistics or machine learning. You can assume a smart, business stakeholder, with a non-quantitative college degree.
-
-#### 2. Go through the Jupyter Notebook, answering questions about how you made certain decisions. Be ready to explain things like:
-    * "How did you pick the question(s) that you did?"
-    * "Why are these questions important from a business perspective?"
-    * "How did you decide on the data cleaning options you performed?"
-    * "Why did you choose a given method or library?"
-    * "Why did you select those visualizations and what did you learn from each of them?"
-    * "Why did you pick those features as predictors?"
-    * "How would you interpret the results?"
-    * "How confident are you in the predictive quality of the results?"
-    * "What are some of the things that could cause the results to be wrong?"
-
-Think of the first phase of the review (~30 mins) as a technical boss reviewing your work and asking questions about it before green-lighting you to present to the business team. You should practice using the appropriate technical vocabulary to explain yourself. Don't be surprised if the instructor jumps around or sometimes cuts you off - there is a lot of ground to cover, so that may happen.
-
-If any requirements are missing or if significant gaps in understanding are uncovered, be prepared to do one or all of the following:
-* Perform additional data cleanup, visualization, feature selection, modeling and/or model validation
-* Submit an improved version
-* Meet again for another Project Review
-
-What won't happen:
-* You won't be yelled at, belittled, or scolded
-* You won't be put on the spot without support
-* There's nothing you can do to instantly fail or blow it
-
-**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.**
+The data was extracted from the `'kc_house_data.csv'`. The dataset contains the following information:
+- **id** - unique identified for a house
+- **dateDate** - house was sold
+- **pricePrice** - is prediction target
+- **bedroomsNumber** - of Bedrooms/House
+- **bathroomsNumber** - of bathrooms/bedrooms
+- **sqft_livingsquare** - footage of the home
+- **sqft_lotsquare** - footage of the lot
+- **floorsTotal** - floors (levels) in house
+- **waterfront** - House which has a view to a waterfront
+- **view** - Has been viewed
+- **condition** - How good the condition is ( Overall )
+- **grade** - overall grade given to the housing unit, based on King County grading system
+- **sqft_above** - square footage of house apart from basement
+- **sqft_basement** - square footage of the basement
+- **yr_built** - Built Year
+- **yr_renovated** - Year when house was renovated
+- **zipcode** - zip
+- **lat** - Latitude coordinate
+- **long** - Longitude coordinate
+- **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
+- **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
 
-## Submitting your Project
+## Methodology
 
- You’re almost done! In order to submit your project for review, include the following links to your work in the corresponding fields on the right-hand side of Learn.
+We begin by exploring the data set, and understanding the raw features that are provided. Next, it is important to understand the null values and their potential implications towards the model, then taking the necessary steps to eliminate these.
 
- 1. **GitHub Repo:** Now that you’ve completed your project in Jupyter Notebooks, push your work to GitHub and paste that link to the right. (If you need help doing so, review the resources [here](https://docs.google.com/spreadsheets/d/1CNGDhjcQZDRx2sWByd2v-mgUOjy13Cd_hQYVXPuzEDE/edit#gid=0).)
-_Reminder: Make sure to also add and commit a pdf of your non-technical presentation to the repository with a file name of presentation.pdf._
-2. **Blog Post:** Include a link to your blog post.
-3. **Record Walkthrough:** Include a link to your video walkthrough.
+Each column of the dataset is explored and analysed to aid in the initial decision of weather to keep or remove the columns. Further, based on the same analysis results, the remaining columns are then bifurcated into numerical or caegorical categories.
 
- Hit "I'm done" to wrap it up. You will receive an email in order to schedule your review with your instructor.
- 
- 
-## Grading Rubric
-Online students can find a PDF of the grading rubric for the project [here](https://github.com/learn-co-curriculum/dsc-mod-2-project-v2-1/blob/master/mod2_project_rubric.pdf). On-campus students may have different review processes, please speak with your instructor.
+The Numerical columns are then further analysed for multicolinearity, with the cut-off of 0.75, while the Categorical columns are converted using the one-hot encoding method. 1st columns of the resulting encoded categorical columns are dropped to avoid errors due to multicollinearity.
+
+A base model is made from the final datatable thus created. Coefficients, pvalues, normality, and hetroscedasticity are then analysed to help formulating the corrective steps to improve the model. `statsmodels` is used to fit the data using OLS methodology.
+
+After creating a few models, the data is then checked for outliers and divided into two groups. One (Group1), pertaining to the majority of the dataset, and another, to target the pricy houses (Group2). Group1 was simply extracted by removing the outliers using IQR from the main dataset, while to generate optimum results with Group2, these were selected based on the visual trial and error method. Seperate models were created for both these groups and the coeffs analysed.
+
+The dataset was also divided on the basis of having a basement or not, for group 1, since this division resulted in better model fit.
+
+Once the models were created, seperate plots for the each determing feature for each model were created, along with one common error plot for all the coeffecients together since each individual feature behaves differently when combined with all the features as compared to independent influence on the dependent variable.
 
 
-## Summary
+## Python Functions Created for This Project
 
-The end of module projects and project reviews are a critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.
+1. Generate a model using `statsmodels` module's `ols` method
+
+```
+def ols_model(cat_col, num_col, df):
+    """Generates an OLS model fit for the given dataframe.
+    Input:
+    cat_col (list): list of columns in the dataframe that are categorical
+    num_col (list): list of columns in the dataframe that are numerical
+    df (DataFrame)
+    Output:
+    model object from statsmodel.ols"""
+    cat_col_form = [f"C({col})" for col in cat_col]
+    num_predictors = '+'.join(num_col)
+    col_predictors = '+'.join(cat_col_form)
+    formula = 'price~' + num_predictors + '+' + col_predictors
+    model = ols(formula = formula, data = df).fit()
+    return model
+```
+    
+2. Conduct basic model analysis for coeffecients, pvalues, and homoscedasticity
+
+```
+def model_analysis(model,df):
+    """takes the model and data frame and returns the model coeffecients, 
+    evaluates p-values based on alpha 0.05, checks for normality through Q-Q plot,
+    and analyses the homoscedasticity of our data
+    input:
+    model (OLS model)
+    df (DataFrame): the DataFrame on wchich the analysis is done
+    """
+    residual = model.resid
+    price = df['price']
+    sns.scatterplot(price, residual);
+    plt.axhline(0)
+    display(model.params.to_frame().style.background_gradient())
+    display(model.pvalues<0.5)
+    display(sm.graphics.qqplot(model.resid, stats.norm, line='45', fit = True));
+```
+    
+3. Determine the 1st quartile, 3rd quartile and IQR of a series
+
+```def IQR(df,category):
+    """Gives the IQR output for a given series in the dataframe
+    Input:
+    df (DataFrame)
+    category (str): name of the column"""
+    Q1 = df[category].quantile(0.25)
+    Q3 = df[category].quantile(0.75)
+    IQR = Q3-Q1
+    return Q1,Q3,IQR
+```
+
+4. Remove outliers based on IQR
+
+```def IQR_remove_outlier(df, col):
+    """Removes outlier based on IQR"""
+    Q1 = df[col].quantile(0.25)
+    Q3 = df[col].quantile(0.75)
+    IQR = Q3-Q1
+    group = df[~((df[col]<(Q1-1.5*IQR)) | (df[col]>(Q3+1.5*IQR)))]
+    return group
+```
+    
+5. Create a `coefplot` for the regression model
+
+```def feature_err_plot (model):
+    """Creates a coefficient plot for the regression model
+    Input:
+    model (statsmodels OLS model object)
+    Output:
+    matplotlib coeffplot
+    """
+    err_series = model.params - model.conf_int()[0]
+    coef_df = pd.DataFrame({'coef': model.params.values[1:],
+                        'err': err_series.values[1:],
+                        'varname': err_series.index.values[1:]
+                       })
+    
+    fig, ax = plt.subplots(figsize=(15, 8))
+    coef_df.plot(x='varname', y='coef', kind='bar', ax=ax, color='none', yerr='err', legend=False)
+    ax.set_ylabel('Price')
+    ax.set_xlabel('Features')
+    ax.scatter(x=pd.np.arange(coef_df.shape[0]), marker='s', s=120, y=coef_df['coef'], color='c')
+    ax.axhline(y=0, linestyle='--', color='midnightblue', linewidth=2)
+    ax.xaxis.set_ticks_position('none')
+    _ = ax.set_xticklabels(coef_df.varname, rotation=90, fontsize=12)
+    plt.show()
+```
+
+
+## The Base Model
+
+### Exploring and Scrubbing individual columns
+
+The first step to any modelling process is to examine and analyze the given data. An initial cleaning of the data set included visual representation of the null values of the dataset using `missingno.matrix()` method.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/null_values_1.png' width=800>
+
+This combined with numerical analysis of the null values show that the data has about 11% null values in the `waterfront` column and 18% in `yr_renovated` column. This is a large number to risk the elimanation of the entire row, hence, we assume that the null values indicate no information and replace those with `False`.
+
+Further, the following edits were run through the columns:
+- The date dtype was converted to `DateTime` to make it easier to strip just the year (`year`) a house was sold and a new column `age` was added by subtracting `year` from `date`. Columns `year` and `date` were then dropped to avoid multicolinearity.
+- `id` column is removed since it is randomnly assigned numbers to recognize the house and should bear no linear relation with the price.
+
+#### Sorting into Numerical and Categorical Types
+A basic analysis was done on all the columns to determine whether that column should be categorical or numerical. This analysis was conducted by evaluating the results of `pandas.Series.describe()` and `pandas.Series.unique()` methods to identify the similiraties of a colum with categorical data types. Based on the initial analysis, the categorical and numerial columns were as below:
+```
+categorical_columns = ['bedrooms', 'bathrooms', 'floors', 'waterfront', 'view', 'condition', 'grade', 'date_year']
+```
+```
+numerical_columns = ['sqft_living','sqft_lot','sqft_above','sqft_basement','yr_built','yr_renovated',
+'zipcode','lat','long','sqft_living15','sqft_lot15','age']
+```
+
+
+### Multicolinearity Analysis
+It is recomended that multicolinearity test be done only within the numerical data. However, for the base model, all the columns of the initial raw dataframe were tested for multicolinearity for easy elimination. `pandas.DataFrame.corr()` method was used the results of which were plotted on a `seaborn` heatmap.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/multicollinearity_initial.png' width=800>
+
+The cut off rule selected is 0.75, with which the columns `sqft_above`, and `sqft_living` were eliminated. The relation with dependent variable `price` was also considered before selecting these columns to drop.
+
+
+### The Base Model
+The base model was generated by OLS fitting of the data set through `statsmodels`'s `old` method. The categorical and numerical data considered for this model are described below:
+
+```
+df1_categorical = ['floors', 'waterfront', 'view', 'condition']
+```
+```
+num_columns = ['sqft_living', 'sqft_lot','sqft_basement','zipcode',
+'lat', 'long', 'sqft_lot15', 'age','grade','bedrooms', 'bathrooms']
+```
+
+In order to aquire interpretable and comparable results, the numerical data is first scaled using `sklearn.preprocessing` module's `RobustScaler()` class. The categorical data is also transformed by one hot encoding method using `pandas.get_dummies()`. The first (base) model is then generated using the `ols_model()` function, specifically created for this project.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/model_results_base.png'>
+
+The first model yeilded an R squared of 0.703. Further analysis on the validity of this model, using the `model_analysis()` function specifically created for this project shows that the data is not normal and there seems to be large number of outliers on the higher end. THis gives us an oportunity to divide our data set into two groups, the one without the outliers, and by not completely disregarding the outliers, the other group which would only have the higher end values. This is done later in the later sections. The homoscedasticity test also shows large hetroscedasticities, especially on the higher side.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/base_QQ.png'>
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/base_hom.png'>
+
+To improve the fit of this model, a few changes were made to certain columns.
+
+
+### Working on Other Columns
+
+- `yr_renovated` was converted to categorical form indicating whether the house was renovated or not. All the renovations after the house was sold, and the `NaN` values were considered as not renovated. 
+- `zipcodes` were divided into 8 zones/subregions based on the data given on government website and grouped as categorical column. `zipcodes`, `lat`, and `long` were removed from the data to avoid running into multicollinearity errors.
+- `sqft_basement` converted to categorical with booleans if the house has a basement or not. `NaN` values were assumed as `False`.
+
+The resulting model improved the R sqaured to 0.722.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/model_results_2.png'>
+
+The normality and homoscedasticity tests gave the same results since the outliers were not worked upon. The following section goes into removing the outliers and dividing our data into two groups.
+
+
+## Spliting into Two Groups
+
+Distribution plots play an important role to visually identify the normality and skewness of our data. Since our aim is to split the group based on prices, the ependent variable, we would first have a look at the distribution of `price`.
+
+### Group 1
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/price_1.png'>
+
+The dataframe final data frame is stripped off outliers using the `IQR_remove_outlier()` function created specifically for this project.
+
+Other columns are also checked to see if this improved the normality to an extent. however, we see that `sqft_lot` and `sqft_lot15` are still massively skewed.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/all_dist.png' width=800>
+
+Once again, we remove the outliers, now on the basis of `sqft_lot` column, and visualise the normality.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/sqft_lot_1.png'>
+
+The ols model is now fitted on this data set, and the R sqauared resulted in 0.743
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/group1_model.png'>
+
+You may also see the improvemet in the Q-Q plot and the improved homoscedasticity result:
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/group1_analysis.png'>
+
+#### Further splitting based on Basement
+
+`Group1` was also further split in two, with and without basements. The results showed a better R squared fit at 0.76 for houses without basement.
+
+
+### What happens to the outliers?
+
+Since, there are a lot of outliers in the higher side, there may be another set of data that could fit a linear regression model, of all the pricy houses. To begin with, all the higher end outliers were chosen and the outliers were first removed from the `sqft_lot` since it had significantly large skewness. A model was fit into this data, which resulted in a lower R sqare value of 0.503.
+
+To identify the best set of datapoints, the distribution plot was generated, and the next set of values were chosen based on the visual trial and error method. The heighest R square of 0.784 was acheived with the houses priced at above $2,500,000.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/group2_model.png'>
+
+However, a lot of features didnt satisfy this model, and were dropped out. The final model, resulted in an R sqare of 0.746.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/group2_model2.png'>
+
+
+## Findings and Conclusions
+
+All analysis and interpretations were made based on the feature coeffecients, since they indicate how much a particular feature would positively or negatively affect the dependent variable, here, `price`. Individual plots were then made to understand the relationshop of the most influential features with price of the house.
+
+It is important note here that the calculated influence indicates the **relative effect** of a particular feature **combined** with all other features, and individual analysis **MAY NOT BE THE SAME**.
+
+
+### Location
+
+It was found that location had an impact on the pricing/cost of the houses. Most pricy houses are located at East urban and seattle region. Each model generated were also influenced by seperate neighborhood in these subregions as well.
+
+As you go south, the prices of the houses decrease.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/location.png' width=800>
+
+
+### Main Model
+
+Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $380,036
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/Coeff_err_main.png'>
+
+The heighest positive influence were seen to be `waterfront`, `view`, and `sqft_living`, while the heighest negtive influencing features include a few locations, `floors`, and `basement`
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_main.png' width=800>
+
+
+### Group1
+
+Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $309,739
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/coeff_analysis_grp1.png'>
+
+The heighest positive influence were seen to be `waterfront`, `view`, `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_grp1.png' width=400>
+
+While splitting into groups based on basement, the base value of the house without any features show houses without basements to sell at a higher price of $335,820, compared to $119,992 for houses with basement. Further analysing the houses with basement shows an inverse relation with price. This is because, smaller basements are likely to be garden basements which are expensive to build (also depends on the soil), while liveable basements which are larger in size have the area included inthe sqft living and drops the cost considerably.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/condition_grp1.png'>
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/basement_err.png'>
+
+
+### Group2
+
+Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $796,597
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/coeff_err_grp2.png'>
+
+The heighest positive influence were seen to be certain locations, renovations, and `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations. It is always seen that pricy homes are located at only certain areas of the county, where either the prices rise due to the land or the location. When people buy expensive houses, they really want to invest into a house that is in a good condition and wont require them of further cost, and also consider the value for money. Renovations are likely to influence the price since, most of the renovated pricy homes have a mordern sophesticated interiors which cost significantly high.
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/renovated_grp2.png'>
+
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/cat_cond_grp2.png'>
+
+
+## Recommendations
+
+> Refer to the price range in the subregion that the house is in for an initial expectation. Also consider whether the house is at the waterfront, since this has a significantly high influence on price.
+
+> To get the highest offer, consider acquiring a greater number of views. This can be done by various means of marketing, including digital marketing, professional videography, and/or 360° view of the house.
+
+> Maintain the highest standards of condition of the house, it being one of the major determinants of the price, to attract higher investments.
+
+> If considering renovation, consider building a basement, which most often then not is included in the sqft living and won't be a heavy investment on your side. Further, keep the majority demographic in mind while choosing the theme of the house for renovation purposes. Most of the high-end houses have undergone renovations per the current trends and are maintained in excellent condition.
+
+
+## Future Work
+
+> Generating separate models based on locations, and subset of waterfront, to make it easier for the audience to decide on the most determinant feature in their neighborhood.
+
+> Analyze the renovated features to interpret the most influencing feature that can be modified to significantly increase the cost of the house 
+
+> Test the hypothesis that modern themed, huge spaced, renovations tend to be pricier, and explore the impact of other themes (e.g. antique) on the pricing
+
+> Generate an interactive tool where the audience will have an ability to choose which feature, they already have, and what can be modified to give a resulting price of their house.
