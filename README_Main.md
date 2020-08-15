@@ -269,48 +269,48 @@ It was found that location had an impact on the pricing/cost of the houses. Most
 
 As you go south, the prices of the houses decrease.
 
-**img location
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/location.png' width=800>
 
 
 ### Main Model
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $380,036
 
-**IMage:Coeff_err_main
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/Coeff_err_main.png'>
 
 The heighest positive influence were seen to be `waterfront`, `view`, and `sqft_living`, while the heighest negtive influencing features include a few locations, `floors`, and `basement`
 
-**image individual_main
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_main.png' width=800>
 
 
 ### Group1
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $309,739
 
-**image coeff_analysis_grp1
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/coeff_analysis_grp1.png'>
 
 The heighest positive influence were seen to be `waterfront`, `view`, `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations
 
-**image individual_grp1
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_grp1.png'>
 
 While splitting into groups based on basement, the base value of the house without any features show houses without basements to sell at a higher price of $335,820, compared to $119,992 for houses with basement. Further analysing the houses with basement shows an inverse relation with price. This is because, smaller basements are likely to be garden basements which are expensive to build (also depends on the soil), while liveable basements which are larger in size have the area included inthe sqft living and drops the cost considerabely.
 
-**image: condition_grp1
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/condition_grp1.png'>
 
-**imaget basement_err
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/basement_err.png'>
 
 
 ### Group2
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $796,597
 
-**image coeff_err_grp2
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/coeff_err_grp2.png'>
 
 The heighest positive influence were seen to be certain locations, renovations, and `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations. It is always seen that pricy homes are located at only certain areas of the county, where either the prices rise due to the land or the location. When people buy expensive houses, they really want to invest into a house that is in a good condition and wont require them of further cost, and also consider the value for money. Renovations are likely to influence the price since, most of the renovated pricy homes have a mordern sophesticated interiors which cost significantly high.
 
-**renovated grp 2
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/renovated_grp2.png'>
 
-**img condition_grp2
+<img src='https://github.com/NehaP92/dsc-mod-2-project-online-pt-041320/blob/master/condition_grp2.png'>
 
 
 ## Recommendations
