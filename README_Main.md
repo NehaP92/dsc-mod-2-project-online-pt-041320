@@ -260,29 +260,76 @@ However, a lot of features didnt satisfy this model, and were dropped out. The f
 
 All analysis and interpretations were made based on the feature coeffecients, since they indicate how much a particular feature would positively or negatively affect the dependent variable, here, `price`. Individual plots were then made to understand the relationshop of the most influential features with price of the house.
 
-It is important note here that the calculated influence indicates the effect of a particular feature **combined** with all other features, and individual analysis **MAY NOT BE THE SAME**.
+It is important note here that the calculated influence indicates the **relative effect** of a particular feature **combined** with all other features, and individual analysis **MAY NOT BE THE SAME**.
+
+
+### Location
+
+It was found that location had an impact on the pricing/cost of the houses. Most pricy houses are located at East urban and seattle region. Each model generated were also influenced by seperate neighborhood in these subregions as well.
+
+As you go south, the prices of the houses decrease.
+
+**img location
+
 
 ### Main Model
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $380,036
 
+**IMage:Coeff_err_main
+
 The heighest positive influence were seen to be `waterfront`, `view`, and `sqft_living`, while the heighest negtive influencing features include a few locations, `floors`, and `basement`
+
+**image individual_main
 
 
 ### Group1
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $309,739
 
+**image coeff_analysis_grp1
+
 The heighest positive influence were seen to be `waterfront`, `view`, `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations
 
+**image individual_grp1
+
 While splitting into groups based on basement, the base value of the house without any features show houses without basements to sell at a higher price of $335,820, compared to $119,992 for houses with basement. Further analysing the houses with basement shows an inverse relation with price. This is because, smaller basements are likely to be garden basements which are expensive to build (also depends on the soil), while liveable basements which are larger in size have the area included inthe sqft living and drops the cost considerabely.
+
+**image: condition_grp1
+
+**imaget basement_err
 
 
 ### Group2
 
 Based on the coeffecients calculated through the ols model fit, the base value of a house, with none of the features were sold at $796,597
 
+**image coeff_err_grp2
+
 The heighest positive influence were seen to be certain locations, renovations, and `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations. It is always seen that pricy homes are located at only certain areas of the county, where either the prices rise due to the land or the location. When people buy expensive houses, they really want to invest into a house that is in a good condition and wont require them of further cost, and also consider the value for money. Renovations are likely to influence the price since, most of the renovated pricy homes have a mordern sophesticated interiors which cost significantly high.
+
+**renovated grp 2
+
+**img condition_grp2
 
 
 ## Recommendations
+
+> Refer to the price range in the subregion that the house is in for an initial expectation. Also consider whether the house is at the waterfront, since this has a significantly high influence on price.
+
+> To get the highest offer, consider acquiring a greater number of views. This can be done by various means of marketing, including digital marketing, professional videography, and/or 360° view of the house.
+
+> Maintain the highest standards of condition of the house, it being one of the major determinants of the price, to attract higher investments.
+
+> If considering renovation, consider building a basement, which most often then not is included in the sqft living and won't be a heavy investment on your side. Further, keep the majority demographic in mind while choosing the theme of the house for renovation purposes. Most of the high-end houses have undergone renovations per the current trends and are maintained in excellent condition.
+
+
+## Future Work
+
+> Generating separate models based on locations, and subset of waterfront, to make it easier for the audience to decide on the most determinant feature in their neighborhood.
+
+> Analyze the renovated features to interpret the most influencing feature that can be modified to significantly increase the cost of the house 
+
+> Test the hypothesis that modern themed, huge spaced, renovations tend to be pricier, and explore the impact of other themes (e.g. antique) on the pricing
+
+> Generate an interactive tool where the audience will have an ability to choose which feature, they already have, and what can be modified to give a resulting price of their house.
