@@ -291,9 +291,9 @@ Based on the coeffecients calculated through the ols model fit, the base value o
 
 The heighest positive influence were seen to be `waterfront`, `view`, `condition`, and houses in the `east_urban` region of king county while the heighest negtive influencing features remain certain locations
 
-<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_grp1.png'>
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/individual_grp1.png' width=400>
 
-While splitting into groups based on basement, the base value of the house without any features show houses without basements to sell at a higher price of $335,820, compared to $119,992 for houses with basement. Further analysing the houses with basement shows an inverse relation with price. This is because, smaller basements are likely to be garden basements which are expensive to build (also depends on the soil), while liveable basements which are larger in size have the area included inthe sqft living and drops the cost considerabely.
+While splitting into groups based on basement, the base value of the house without any features show houses without basements to sell at a higher price of $335,820, compared to $119,992 for houses with basement. Further analysing the houses with basement shows an inverse relation with price. This is because, smaller basements are likely to be garden basements which are expensive to build (also depends on the soil), while liveable basements which are larger in size have the area included inthe sqft living and drops the cost considerably.
 
 <img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/condition_grp1.png'>
 
@@ -310,7 +310,7 @@ The heighest positive influence were seen to be certain locations, renovations, 
 
 <img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/renovated_grp2.png'>
 
-<img src='https://github.com/NehaP92/dsc-mod-2-project-online-pt-041320/blob/master/condition_grp2.png'>
+<img src='https://raw.githubusercontent.com/NehaP92/dsc-mod-2-project-online-pt-041320/master/cat_cond_grp2.png'>
 
 
 ## Recommendations
